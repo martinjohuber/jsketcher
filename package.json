@@ -11,8 +11,7 @@
     "lint-fix": "./node_modules/eslint/bin/eslint.js --fix web/app modules",
     "check-code": "./node_modules/typescript/bin/tsc --noEmit",
     "checks-passed-banner": "echo 'All conditions passed. Ready to go to the main branch. Good job!'",
-    "before-main-branch-merge": "npm run lint && npm run check-code && npm run checks-passed-banner",
-    "cypress": "npx cypress open"
+    "before-main-branch-merge": "npm run lint && npm run check-code && npm run checks-passed-banner"
   },
   "repository": {
     "type": "git",
@@ -51,8 +50,6 @@
     "babel-polyfill": "^6.26.0",
     "concurrently": "^7.3.0",
     "css-loader": "^3.4.2",
-    "cypress": "^4.7.0",
-    "cypress-wait-until": "^1.7.1",
     "del": "^6.0.0",
     "eslint": "^8.22.0",
     "eslint-plugin-import": "^2.26.0",
