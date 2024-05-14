@@ -80,10 +80,10 @@ Install node.js
 
 * $ cd \<jsketcher folder\>
 * $ npm install
-* $ export NODE_OPTIONS=--max-old-space-size=8096
 * $ npm start
 
-sudo npm install pm2 -g
+Making it permanen:
+* $ sudo npm install pm2 -g
 
 startup service einrichten (autostart on reboot)
 * $ pm2 startup
@@ -92,7 +92,7 @@ You have to run this command as root. Execute the following command:
 * $ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v14.3/bin pm2 startup  -u  --hp 
 
 In the jsketcher folder run:
-* $ pm2 start "npm start" --node-args="--max-old-space-size=8096"
+* $ pm2 start "npm start"
 
 Last but not least save the app list to restart on reboot
 * $ pm2 save
